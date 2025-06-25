@@ -1,3 +1,7 @@
+---
+import Navbar from "../components/Navbar.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,15 +12,10 @@
 		<title>Purple</title>
 	</head>
 	<body>
+		<Navbar />
 
-
-
-<header> Aquí va el menú 
-</header>
 		<slot />
 
-<footer> Aquí va el pie de página </footer>
-
-
+		<footer>Aquí va el pie de página</footer>
 	</body>
 </html>
