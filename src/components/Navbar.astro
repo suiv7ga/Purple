@@ -1,16 +1,31 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
 <header>
- <nav>
-    <ul>
-       <li>
-        <a href="/">Inicio</a>
-        <li>
-            <a href="/mobile">Moviles</a>
-        <li>
-            <a href="/lifestyle">Estilo de Vida</a>
-        <li>
-            <a href="/home">Hogar</a>
-        <li>
-        <a href="/contact">Contactanos</a>
-    </ul>
- </nav>
+    <nav>
+    
+        <div>
+            <Icon name="simple-icons:xiaomi" width="56" height="56" class="logo" />
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/mobile">Moviles</a></li>
+                <li><a href="/lifestyle">Estilo de Vida</a></li>
+                <li><a href="/home">Hogar</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="/contact">Contactanos</a></li>
+                <li><a href="/discover">Descubrir</a></li>
+                <li><a href="/support">Soporte</a></li>
+            </ul>
+        </div>
+        <div>
+            <Icon name="ant-design:search-outlined" width="32" height="32" class="search-icon" />
+            <Icon name="ant-design:user-outlined" width="32" height="32" class="contat-icon" />
+        </div>
+
+
+    </nav>
 </header>
