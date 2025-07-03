@@ -1,16 +1,76 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Jumbotron from "../components/Jumbotron.astro";
-import Banner from "../components/Banner.astro";
-
+import Banner3 from "../components/banner3.astro";
+import Banner1 from "../components/banner1.astro";
+import Banner2 from "../components/banner2.astro";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
 	<Jumbotron />
-	<Banner title="Xiaomi Focus Pen" description="Easy to write an has an added spotlight button" tag="New White Colour scheme"/>
-	<Banner title="Xiaomi Pad 7/7 Pro Focus Keyboard" description="A comprehensive tablet assistant - unleash your potential anytime, anywhere" tag="New floating form"/>
-	<Banner title="Xiaomi 2K Monitor A27Qi" description="Slim and simple for effortless work" tag="Clear and natural picture quality"/>
-	Esta es la ruta incial.
+
+	<h2>Featured Products</h2>
+
+	<Banner1
+		title="Xiaomi HyperAi"
+		sub="Xioami Pad 7 Pro"
+		tag="Focus your flow"
+		imgURL="tablet.webp"
+	/>
+	<Banner1
+		title="Smart Desktop Air Circulation Fan"
+		sub="Xiaomi"
+		tag="Lightweight and portable"
+		imgURL="fan.webp"
+	/>
+	<Banner1
+		title="XIAOMI TV A Pro 75 2026"
+		sub="Smart living, immersive viewing"
+		tag="Bright 4k QLED display with motion smoothing technology"
+		imgURL="tv.webp"
+	/>
+
+	<Banner2
+		title="Xiaomi Focus Pen"
+		description="Easy to write and has an added spotlight button"
+		imgURL="pencil.webp"
+		button=""
+	/>
+	<Banner2
+		title="Xiaomi Pad 7/ 7 Pro Focus Keyboard"
+		description="A comprehensive tablet assistant"
+		imgURL="cop.webp"
+		button=""
+	/>
+	<Banner2
+		title="Xiaomi 2K Monitor A27Qi"
+		description="Slim and simple for effortless work"
+		imgURL="tele.webp"
+		button=""
+	/>
+	<Banner2
+		title="Xioami Router"
+		description="Full-speed, full-home Wi-Fi 6 coverage"
+		imgURL="router.webp"
+		button=""
+	/>
+
+	<h2>Explore Xiaomi</h2>
+	<Banner3
+		title="Xiaomi 212W HyperCharge Power Bank 25000"
+		description="An ideal travel partner for fast, safe and reliable charging."
+		imgURL="POWER.webp"
+	/>
+	<Banner3
+		title="Redmi Note 14 Series shines in Sand Gold"
+		description="Curved lines and golden hues blend elegance and strenght in every detail."
+		imgURL="14.webp"
+	/>
+	<Banner3
+		title="Xiaomi HyperOS 2"
+		description="Enhanced user experience and seamless smart connectivity demonstrate the upgrades."
+		imgURL="hyperos.webp"
+	/>
 </Layout>
