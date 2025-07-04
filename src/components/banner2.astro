@@ -1,20 +1,30 @@
 ---
 interface Props {
-    imgURL: string
-    title: string
-    description: string
-    button: string
-    
+    imgURL: string;
+    title: string;
+    description: string;
 }
-const {imgURL, title, description, button} = Astro.props
+const { imgURL, title, description } = Astro.props;
 ---
-<div>   
+
+<div>
     <img src={imgURL} alt={title} />
     <div>
         <h3>{title}</h3>
         <p>{description}</p>
     </div>
     <div>
-        <button>Learn More</button>
+        <button class="button">Learn More</button>
     </div>
 </div>
+
+<style>
+ .button {
+    background-color:rgb(26, 23, 23);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 8px 20px;
+    
+ }
+</style>

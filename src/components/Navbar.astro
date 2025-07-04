@@ -3,25 +3,25 @@ import { Icon } from 'astro-icon/components';
 ---
 
 <header>
-    <nav>
+    <nav class="barra">
         
-        <div>
-            <a href="/">
-                <Icon name="simple-icons:xiaomi" width="32" height="32" class="logo-mobile" />
+        <div class="separadores">
+            <a href="/" class="enlaces">
+                <Icon name="simple-icons:xiaomi" width="36" height="36" class="logo-mobile" class="icono"/>
             </a>
-            <ul>
+            <ul class="enlaces">
                 <li><a href="/mobile">Mobile</a></li>
                 <li><a href="/lifestyle">Lifestyle</a></li>
                 <li><a href="/home">Smart Home</a></li>
             </ul>
         </div>
-        <div>
-            <ul>
+        <div class="separadores">
+            <ul class="enlaces">
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/discover">Discover</a></li>
                 <li><a href="/support">Support</a></li>
             </ul>
-            <div>
+            <div class="enlaces">
                 <Icon name="ant-design:search-outlined" width="32" height="32" class="search-icon" />
                 <Icon name="ant-design:user-outlined" width="32" height="32" class="contat-icon" />
             </div>
@@ -30,3 +30,27 @@ import { Icon } from 'astro-icon/components';
         
     </nav>
 </header>
+
+<style>
+    .separadores {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+    }
+    .barra {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 30px;
+    }
+    .enlaces {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .icono {
+        color: #ff6900;
+    }
+</style>
