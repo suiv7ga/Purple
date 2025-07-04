@@ -2,26 +2,57 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<div>
+<div class="jumbotron">
     <div>
         <div>
-            <div>
-               <img src="portada.jpg" alt="Xiaomi 15 phones">
-            </div>
-            <p>Xiaomi HyperAI</p>
+            <span class="hyper">Xiaomi HyperAI</span>
             <h1>Xiaomi 15 Ultra</h1>
-            <div>
+            <div class="sub">
                 <p>co-engineered with</p>
                 <Icon
                     name="simple-icons:leica"
                     width="24"
                     height="24"
                     class="logo-mobile"
+                    class="leicalogo"
                 />
             </div>
             <p>Pinnacle photography</p>
             <p>Redefining Leica optics</p>
-            <button>Learn More</button>
+            <button class="click">Learn More</button>
         </div>
     </div>
 </div>
+
+<style>
+    .jumbotron {
+        background-image: url(portada.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 120px 50px;
+    }
+
+    .sub {
+        display: flex;
+        gap: 12px;
+    }
+    .leicalogo {
+        color: red;
+    }
+    .hyper {
+        background-color: black;
+        color: white;
+        border-radius: 100px;
+        font-weight: 500;
+        padding: 5px 15px;
+    }
+    .click {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        font-weight: 500;
+        padding: 5px 15px;
+
+    }
+</style>
