@@ -13,7 +13,7 @@ const { title, description, imgURL } = Astro.props
     <div>
         <img src={imgURL} alt={title} class="img">
     </div>
-    <div>
+    <div class="more">
         <h4>{title}</h4>
         <p>{description}</p>
     </div>
@@ -24,5 +24,12 @@ const { title, description, imgURL } = Astro.props
         width:100%;
         height: 250px;
         object-fit: cover;
+    }
+    .more{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 50px 3% 25px;
     }
 </style>

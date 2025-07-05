@@ -8,7 +8,7 @@ import { Icon } from "astro-icon/components";
             <span class="hyper">Xiaomi HyperAI</span>
             <h1>Xiaomi 15 Ultra</h1>
             <div class="sub">
-                <p>co-engineered with</p>
+                <p>CO-ENGINEERED WITH</p>
                 <Icon
                     name="simple-icons:leica"
                     width="24"
@@ -21,7 +21,7 @@ import { Icon } from "astro-icon/components";
             <p class="subs">Pinnacle photography</p>
             <p>Redefining Leica optics</p>
             </div>
-            <div>
+            <div class="descrip">
             <button class="click">Learn More</button>
         </div>
     </div>
@@ -40,30 +40,32 @@ import { Icon } from "astro-icon/components";
     .sub {
         display: flex;
         gap: 5px;
-        padding-left: 100px;
+        padding-left: 130px;
+        font-size: 10px;
     }
     .leicalogo {
         color: red;
     }
     .hyper {
-        background-color: black;
+        background-color:  rgb(0, 0, 0);
         color: white;
         border-radius: 100px;
         font-weight: 500;
         padding: 5px 15px;
     }
     .click {
-        background-color: black;
+        background-color:  rgb(49, 49, 49);
         color: white;
         border-radius: 10px;
         font-weight: 500;
         padding: 5px 15px;
         
-        
     }
     .descrip{
         display: flex; flex-direction: column;
-        gap: 12px
+        gap: 10px;
+        padding-bottom: 20px;
+       
     }
     .subs{
         font-weight: 500;
@@ -71,7 +73,6 @@ import { Icon } from "astro-icon/components";
     }
     .all{
         padding-left: 150px;
-        
     }
     
 </style>

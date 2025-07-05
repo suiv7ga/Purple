@@ -19,7 +19,7 @@ import Banner2 from "../components/banner2.astro";
 		</div>
 	</Jumbotron>
 
-	     <h2>Featured Products</h2>
+	     <h2 class="sections">Featured Products</h2>
 	<Banner1
 		title="Xiaomi HyperAi"
 		sub="Xioami Pad 7 Pro"
@@ -60,7 +60,7 @@ import Banner2 from "../components/banner2.astro";
 		imgURL="router.webp"
 	/>
 
-	<h2>Explore Xiaomi</h2>
+	<h2 class="sections">Explore Xiaomi</h2>
 	<Banner3
 		title="Xiaomi 212W HyperCharge Power Bank 25000"
 		description="An ideal travel partner for fast, safe and reliable charging."
@@ -77,3 +77,15 @@ import Banner2 from "../components/banner2.astro";
 		imgURL="hyperos.webp"
 	/>
 </Layout>
+
+<style>
+.sections{
+	display: flex;
+	justify-content: center;
+	padding: 50px 3% 25px;
+	font-size: 26px;
+	width:700;
+
+}
+
+</style>
