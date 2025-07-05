@@ -11,7 +11,7 @@ const  { title, sub, tag, imgURL } = Astro.props
 
 <div>
     <div>
-        <img src={imgURL} alt={title}>
+        <img src={imgURL} alt={title} class="img">
     </div>
     <div>
         <h3>{sub}</h3>
@@ -20,3 +20,10 @@ const  { title, sub, tag, imgURL } = Astro.props
     </div>
 </div>
 
+<style>
+    .img{
+        width:100%;
+        height: 250px;
+        object-fit: cover;
+    }
+</style>

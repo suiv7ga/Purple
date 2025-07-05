@@ -3,7 +3,7 @@ import { Icon } from "astro-icon/components";
 ---
 
 <div class="jumbotron">
-    <div>
+    <div class="all">
         <div>
             <span class="hyper">Xiaomi HyperAI</span>
             <h1>Xiaomi 15 Ultra</h1>
@@ -16,9 +16,12 @@ import { Icon } from "astro-icon/components";
                     class="logo-mobile"
                     class="leicalogo"
                 />
-            </div>
-            <p>Pinnacle photography</p>
+            </div >
+            <div class="descrip">
+            <p class="subs">Pinnacle photography</p>
             <p>Redefining Leica optics</p>
+            </div>
+            <div>
             <button class="click">Learn More</button>
         </div>
     </div>
@@ -36,7 +39,8 @@ import { Icon } from "astro-icon/components";
 
     .sub {
         display: flex;
-        gap: 12px;
+        gap: 5px;
+        padding-left: 100px;
     }
     .leicalogo {
         color: red;
@@ -54,6 +58,20 @@ import { Icon } from "astro-icon/components";
         border-radius: 10px;
         font-weight: 500;
         padding: 5px 15px;
-
+        
+        
     }
+    .descrip{
+        display: flex; flex-direction: column;
+        gap: 12px
+    }
+    .subs{
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .all{
+        padding-left: 150px;
+        
+    }
+    
 </style>

@@ -1,1 +1,82 @@
-<footer>Aquí va el pie de página</footer>
+---
+import { Icon } from "astro-icon/components";
+---
+
+<footer>
+    <div class="footer">
+        <div>
+            <p>Follow Xiaomi</p>
+            <div>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/XiaomiGlobal/"
+                        ><Icon
+                            name="simple-icons:facebook"
+                            width="32"
+                            height="32"
+                            class="logo-mobile"
+                            class="icon_redes"
+                        /></a>
+                        <a href="https://www.youtube.com/user/XiaomiChina"
+                        ><Icon
+                            name="simple-icons:youtube"
+                            width="32"
+                            height="32"
+                            class="logo-mobile"
+                            class="icon_redes"
+                        /></a>
+                        <a href="https://www.instagram.com/xiaomi.global"
+                        ><Icon
+                            name="simple-icons:instagram"
+                            width="32"
+                            height="32"
+                            class="logo-mobile"
+                            class="icon_redes"
+                        /></a>
+                        <a href="https://c.mi.com/global/"
+                        ><Icon
+                            name="simple-icons:xiaomi"
+                            width="32"
+                            height="32"
+                            class="logo-mobile"
+                            class="icon_redes"
+                        /></a>     
+                </li>
+            </ul>
+            </div>
+        </div>
+
+        <div>
+            <p>Enter your email address to subscribe to our newsletters</p>
+            <form action="">
+                <label for="email">
+                    <input type="email" name="email" id="email"  placeholder="Enter email adress" class="typingbar" />
+                </label>
+            </form>
+        </div>
+    </div>
+</footer>
+
+<style>
+.footer{
+    background-color: rgb(49, 49, 49);
+    color:white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    space
+}
+.icon_redes{
+    color: rgb(196, 196, 196);
+}
+.typingbar{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 3px 20px;
+    border-width: 1px;
+    color:white
+
+}
+</style>
