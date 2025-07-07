@@ -1,0 +1,54 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    imgURL: string;
+    doble: string;
+}
+const { title, description, imgURL, doble } = Astro.props;
+---
+
+<div class="all">
+    <div class="looks">
+        <h3 class="tit">{title}</h3>
+        <p>{description}</p>
+        <p>{doble}</p>
+    </div>
+    <div>
+        <button class="button">Learn More</button>
+    </div>
+    <div>
+        <img src={imgURL} alt="" class="img"/>
+    </div>
+</div>
+
+<style>
+    .img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:40px;
+        padding: 50px;
+    }
+    .looks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .tit {
+        font-size: 30px;
+    }
+    .button {
+        background-color: rgb(49, 49, 49);
+        border-radius: 10px;
+        font-weight: 700;
+        padding: 8px 20px;
+        color: white;
+    }
+</style>

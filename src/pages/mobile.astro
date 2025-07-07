@@ -1,7 +1,124 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Jumbotron2 from "../components/Jumbotron2.astro";
+import Sections from "../components/sections.astro";
 ---
 
 <Layout>
- Esta es la pagina para mostrar los tipos de moviles que tenemos. 
+    <div class="headingpart">
+        <h2>Xioami Series</h2>
+        <p>A new era of exquisite design</p>
+    </div>
+    <Jumbotron2>
+        <h1>Xioami 15 Ultra</h1>
+        <p>Pinnacle Photography</p>
+    </Jumbotron2>
+
+    <Sections
+        title="Xiaomi 15"
+        description="Leica Summilux optical lens"
+        doble="Redefining Leica optics"
+        imgURL="xiaomi15.webp"
+    />
+    <Sections
+        title="Xiaomi MIX Flip"
+        description=" 4.0' All around"
+        imgURL="xiaomiflip.webp"
+        doble="Liquid outer display"
+    />
+    <Sections
+        title="Xiaomi 14T Pro"
+        description="Leica Summilux optical lens"
+        imgURL="xiaomi14tpro.webp"
+        doble="Redefining Triple lens, five local lengths"
+    />
+
+    <Jumbotron2>
+        <h1>Redmi Note 14 Pro +</h1>
+        <p>Iconic shots, AI crafted</p>
+    </Jumbotron2>
+
+    <Sections
+        title="Redmi Note 14 5G"
+        description="108MP AI camera"
+        imgURL="note14.webp"
+        doble="All-Star Durability"
+    />
+    <Sections
+        title="Redmi Note 14 Pro 5G"
+        description="200MP AI camera"
+        imgURL="14pro.webp"
+        doble="All-Star Durability"
+    />
+    <Sections
+        title="Redmi Note 14"
+        description="108MP AI camera"
+        imgURL="redmi14.webp"
+        doble="All=Star Durability"
+    />
+    <Sections
+        title="Redmi 14C"
+        description="Immersive 6.88 display"
+        imgURL="redmi14c.webp"
+        doble="Refined and stylish design"
+    />
+    <div class="headingpart">
+        <h2>POCO Phones</h2>
+    </div>
+    <Jumbotron2>
+        <h1>POCO F7 Ultra</h1>
+        <p>Ultrapower Unleashed</p>
+    </Jumbotron2>
+    <Sections
+        title="Poco F7 Pro"
+        description="Flagship Snapdragon© 8 Gen 3"
+        imgURL="pocof7pro.webp"
+        doble="Massive 6000mAh (typ) battery"
+    />
+    <Sections
+        title="Poco F7"
+        description="Flagship Snapdragon© 8 Gen 4"
+        imgURL="pocof7.webp"
+        doble="Massive 6500mAh (typ) battery"
+    />
+    <Sections
+        title="Poco X7 Pro"
+        description="Flagship Dimensity 8400-Ultra"
+        imgURL="pocox7 pro.webp"
+        doble="Massive 6000mAh (typ) battery with 90W HyperCharge"
+    />
+    <Sections
+        title="Poco X7"
+        description="Powerful Dimensity 7300-Ultra"
+        imgURL="poco x7.webp"
+        doble="CrystalRes 1.5K 120Hz AMOLED curved display"
+    />
+    <Jumbotron2>
+        <h1>XIAOMI Pad 7 Pro</h1>
+        <p>Focus your flow</p>
+    </Jumbotron2>
+    <Sections
+        title="Redmi Pad 2"
+        description="11 2.5K crystal-clear display"
+        imgURL="redmipad.webp"
+        doble="Massive 9000mAh(typ)battery"
+    />
+        <Sections
+        title="Xiaomi Focus Pen"
+        description="Simply pick up the pen and write or add"
+        imgURL="pencill.webp"
+        doble="more layers to your artwork"
+    />
 </Layout>
+
+<style>
+    .headingpart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 3% 50px;
+        font-size: 15px;
+        width: 700;
+        background-color: #f7f7f7;
+    }
+</style>

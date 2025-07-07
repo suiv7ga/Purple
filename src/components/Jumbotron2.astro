@@ -1,0 +1,30 @@
+
+<div class="background15ultra">
+    <slot />
+    <div class="division">
+        <h1></h1>
+        <p class="subs"></p>
+    </div>
+</div>
+
+
+
+<style>
+    .background15ultra {
+        background-image: url(15.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 150px 50px;
+        object-fit: cover;
+        padding-left: 150px;
+    }
+    .division{
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+    .subs{
+        font-size: larger;
+    }
+</style>
