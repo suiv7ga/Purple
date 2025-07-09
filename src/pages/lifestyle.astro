@@ -6,95 +6,109 @@ import Sections from "../components/Sections.astro";
 ---
 
 <Layout>
-    <Jumbotron2 background="scale.webp">
+    <Jumbotron2 url="scale.webp">
         <h1>Xiaomi Body Composition Scale s400</h1>
         <p>Dual-frequency precision for in-depth health checking</p>
     </Jumbotron2>
+
     <div class="headingpart">
         <h2>Smart Home Office</h2>
         <p>Improve your life</p>
     </div>
-    <Section2
-        title="Xioami 2K Monitor A27Qi"
-        description="Slim and simple for effortless work"
-        imgURL="monitor 2k.webp"
-    />
-    <Section2
-        title="Xiaomi Wireless Keyboard and Mouse"
-        description="Enjoy your wireless productivity"
-        imgURL="keyboard.webp"
-    />
-    <Section2
-        title="Xiaomi Router AX3000T"
-        description="Full-speed, full home Wi-Fi 6 coverage"
-        imgURL="routerrr.webp"
-    />
-    <Sections
-        title="Xioami 65W Power Dock"
-        description="Compact design"
-        imgURL="regleta.webp"
-        doble="65W gallium nitride (GaN)"
-    />
+
+    <div class="homeoffice">
+        <Section2
+            title="Xioami 2K Monitor A27Qi"
+            description="Slim and simple for effortless work"
+            imgURL="monitor 2k.webp"
+        />
+        <Section2
+            title="Xiaomi Wireless Keyboard and Mouse"
+            description="Enjoy your wireless productivity"
+            imgURL="keyboard.webp"
+        />
+        <Section2
+            title="Xiaomi Router AX3000T"
+            description="Full-speed, full home Wi-Fi 6 coverage"
+            imgURL="routerrr.webp"
+        />
+        <Sections
+            title="Xioami 65W Power Dock"
+            description="Compact design"
+            imgURL="regleta.webp"
+            doble="65W gallium nitride (GaN)"
+        />
+    </div>
+
     <div class="headingpart">
         <h2>Health & Fitness</h2>
         <p>Healthy life, happy life</p>
     </div>
-    <Sections
-        title="Xioami Smart Scale S200"
-        description="4 different"
-        imgURL="peso.webp"
-        doble="reading in one go"
-    />
-    <Sections
-        title="Xioami Massage Gun"
-        description="Intelligent power control"
-        imgURL="masajeador.webp"
-        doble="Ultra quiet operation"
-    />
-    <Section2
-        title="Xiaomi Handheld Garment Steamer"
-        description="Foldable mini steamer for quick wrinkle removal"
-        imgURL="regleta.webp"
-    />
-    <Sections
-        title="Xiaomi Smart Pet Food Feeder 2"
-        description="5L large capacity"
-        imgURL="comida.webp"
-        doble="Accurate weighing"
-    />
-    <Section2
-        title="Xiaomi lint Remover"
-        description="Say goodbye to lint balls"
-        imgURL="lint.webp"
-    />
+    <div class="homeoffice">
+        <div style="flex-basis: 50%;">
+            <Sections 
+                title="Xioami Smart Scale S200"
+                description="4 different"
+                imgURL="peso.webp"
+                doble="reading in one go"
+            />
+        </div>
+        <Sections
+            title="Xioami Massage Gun"
+            description="Intelligent power control"
+            imgURL="masajeador.webp"
+            doble="Ultra quiet operation"
+        />
+        <Section2
+            title="Xiaomi Handheld Garment Steamer"
+            description="Foldable mini steamer for quick wrinkle removal"
+            imgURL="regleta.webp"
+        />
+        <Sections
+            title="Xiaomi Smart Pet Food Feeder 2"
+            description="5L large capacity"
+            imgURL="comida.webp"
+            doble="Accurate weighing"
+        />
+        <Section2
+            title="Xiaomi lint Remover"
+            description="Say goodbye to lint balls"
+            imgURL="lint.webp"
+        />
+    </div>
+
     <div class="headingpart">
         <h2>Chargings</h2>
         <p>Stay prepare for creation</p>
     </div>
+
+    <div class="homeoffice">
         <Sections
-        title="Xiaomi 165W Power Bank 10000 (Integrated Cable)"
-        description="Dual ports with a combined output of up to 165W"
-        imgURL="164w.webp"
-        doble="Up to 90W self-charging for efficient recharging"
-    />
+            title="Xiaomi 165W Power Bank 10000 (Integrated Cable)"
+            description="Dual ports with a combined output of up to 165W"
+            imgURL="164w.webp"
+            doble="Up to 90W self-charging for efficient recharging"
+        />
         <Sections
-        title="Xiaomi 33W Power Bank 10000 (Integrated Cable)"
-        description="Up to 33W fast charging output"
-        imgURL="out.webp"
-        doble="Built-in-USB-C cable for added convenience"
-    />
+            title="Xiaomi 33W Power Bank 10000 (Integrated Cable)"
+            description="Up to 33W fast charging output"
+            imgURL="out.webp"
+            doble="Built-in-USB-C cable for added convenience"
+        />
         <Sections
-        title="Xiaomi 50W Wireless Charging Stand Pro"
-        description="High-efficiency fast charging"
-        imgURL="nfc.webp"
-        doble="Ergonomic design for an ideal viewing angle"
-    />
+            title="Xiaomi 50W Wireless Charging Stand Pro"
+            description="High-efficiency fast charging"
+            imgURL="nfc.webp"
+            doble="Ergonomic design for an ideal viewing angle"
+        />
         <Sections
-        title="Xiaomi 6A High-Speed USB4 Braided USB-C to USB-C Cable"
-        description="40Gps transmission speed 8K"
-        imgURL="usb.webp"
-        doble="60Hz video transmission"
-    />
+            title="Xiaomi 6A High-Speed USB4 Braided USB-C to USB-C Cable"
+            description="40Gps transmission speed 8K"
+            imgURL="usb.webp"
+            doble="60Hz video transmission"
+        />
+    </div>
+
 </Layout>
 
 <style>
@@ -106,5 +120,11 @@ import Sections from "../components/Sections.astro";
         font-size: 15px;
         width: 700;
         background-color: #f7f7f7;
+    }
+    .homeoffice {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:15px;
     }
 </style>
