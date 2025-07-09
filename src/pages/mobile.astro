@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Jumbotron2 from "../components/Jumbotron2.astro";
 import Sections from "../components/Sections.astro";
+import Jumbotron3 from "../components/Jumbotron3.astro";
 ---
 
 <Layout>
@@ -13,7 +14,7 @@ import Sections from "../components/Sections.astro";
         <h1>Xioami 15 Ultra</h1>
         <p>Pinnacle Photography</p>
     </Jumbotron2>
-
+    <div class="cell">
     <Sections
         title="Xiaomi 15"
         description="Leica Summilux optical lens"
@@ -32,12 +33,13 @@ import Sections from "../components/Sections.astro";
         imgURL="xiaomi14tpro.webp"
         doble="Redefining Triple lens, five local lengths"
     />
+    </div>
 
-    <Jumbotron2 background="jum.webp">
+    <Jumbotron3 background="jum.webp">
         <h1>Redmi Note 14 Pro +</h1>
         <p>Iconic shots, AI crafted</p>
-    </Jumbotron2>
-
+    </Jumbotron3>
+<div class="cell">
     <Sections
         title="Redmi Note 14 5G"
         description="108MP AI camera"
@@ -62,13 +64,15 @@ import Sections from "../components/Sections.astro";
         imgURL="redmi14c.webp"
         doble="Refined and stylish design"
     />
+    </div>
     <div class="headingpart">
         <h2>POCO Phones</h2>
     </div>
     <Jumbotron2 background="poco header.webp">
-        <h1>POCO F7 Ultra</h1>
-        <p>Ultrapower Unleashed</p>
+        <h1 class="color">POCO F7 Ultra</h1>
+        <p class="color">Ultrapower Unleashed</p>
     </Jumbotron2>
+    <div class="cell">
     <Sections
         title="Poco F7 Pro"
         description="Flagship Snapdragon© 8 Gen 3"
@@ -93,22 +97,25 @@ import Sections from "../components/Sections.astro";
         imgURL="poco x7.webp"
         doble="CrystalRes 1.5K 120Hz AMOLED curved display"
     />
+    </div>
     <Jumbotron2 background="xiaomipad.webp">
-        <h1>XIAOMI Pad 7 Pro</h1>
-        <p>Focus your flow</p>
+        <h1 class="color">XIAOMI Pad 7 Pro</h1>
+        <p class="color">Focus your flow</p>
     </Jumbotron2>
+    <div class="cell">
     <Sections
         title="Redmi Pad 2"
         description="11 2.5K crystal-clear display"
         imgURL="redmipad.webp"
         doble="Massive 9000mAh(typ)battery"
     />
-        <Sections
+    <Sections
         title="Xiaomi Focus Pen"
         description="Simply pick up the pen and write or add"
         imgURL="pencill.webp"
         doble="more layers to your artwork"
     />
+    </div>
 </Layout>
 
 <style>
@@ -120,5 +127,15 @@ import Sections from "../components/Sections.astro";
         font-size: 15px;
         width: 700;
         background-color: #f7f7f7;
+    }
+    .color {
+        color: white;
+    }
+    .cell {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:15px;
+        padding: 15px;
     }
 </style>

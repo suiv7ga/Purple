@@ -7,8 +7,8 @@ import Sections from "../components/Sections.astro";
 
 <Layout>
     <Jumbotron2 background="scale.webp">
-        <h1>Xiaomi Body Composition Scale s400</h1>
-        <p>Dual-frequency precision for in-depth health checking</p>
+        <h1 class="sd">Xiaomi Body Composition Scale s400</h1>
+        <p class="sd">Dual-frequency precision for in-depth health checking</p>
     </Jumbotron2>
 
     <div class="headingpart">
@@ -45,7 +45,7 @@ import Sections from "../components/Sections.astro";
         <p>Healthy life, happy life</p>
     </div>
     <div class="homeoffice">
-        <div style="flex-basis: 50%;">
+        <div style="flex-basis: 60%">
             <Sections 
                 title="Xioami Smart Scale S200"
                 description="4 different"
@@ -59,6 +59,7 @@ import Sections from "../components/Sections.astro";
             imgURL="masajeador.webp"
             doble="Ultra quiet operation"
         />
+        
         <Section2
             title="Xiaomi Handheld Garment Steamer"
             description="Foldable mini steamer for quick wrinkle removal"
@@ -126,5 +127,9 @@ import Sections from "../components/Sections.astro";
         flex-wrap: wrap;
         justify-content: center;
         gap:15px;
+        padding: 15px;
+    }
+    .color{
+        sd: white;
     }
 </style>
