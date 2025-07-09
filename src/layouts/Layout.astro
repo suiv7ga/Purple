@@ -13,7 +13,7 @@ import '../styles/globlal.css'
 		<meta name="generator" content={Astro.generator} />
 		<title>Purple</title>
 	</head>
-	<body>
+	<body class="back">
 		<Navbar />
 
 		<slot />
@@ -21,3 +21,9 @@ import '../styles/globlal.css'
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.back{
+		background-color: #f7f7f7;
+	}
+</style>
