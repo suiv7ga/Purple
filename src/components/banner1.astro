@@ -25,6 +25,8 @@ const { title, sub, tag, imgURL } = Astro.props;
         height: 250px;
         object-fit: cover;
         border-radius: 10px;
+
+        transition: all 0.3s ease-in;
     }
     .focus{
         color: white;
@@ -43,8 +45,9 @@ const { title, sub, tag, imgURL } = Astro.props;
         border-color: transparent;
         border-width: 1em;
 
-        
-    
+    }
+    .inicio:hover img{
+        transform: scale(1.1);
     }
     .looks{
         display: flex;

@@ -27,15 +27,16 @@ const { imgURL, title, description } = Astro.props;
         color: white;
 
         transition: background 0.3s ease-in;
-
     }
-    .button:hover{
-        background-color: #616161;;
+    .button:hover {
+        background-color: #616161;
     }
     .img {
         width: 100%;
         height: 250px;
         object-fit: cover;
+
+        transition: all 0.3s ease-in;
     }
     .little {
         display: flex;
@@ -46,13 +47,11 @@ const { imgURL, title, description } = Astro.props;
         flex-grow: 1;
     }
     .inicio {
-        background-color:#e7e7e7;
+        background-color: #e7e7e7;
         border: solid;
         border-color: transparent;
-
-        transition: all 0.3s ease-in;
     }
-    .inicio:hover{
+    .inicio:hover img {
         transform: scale(1.1);
     }
 </style>
