@@ -20,58 +20,66 @@ import { Icon } from "astro-icon/components";
             <div class="descrip">
                 <p class="subs">Pinnacle photography</p>
                 <p>Redefining Leica optics</p>
-            <div>
-                <button class="click">Learn More</button>
+                <div>
+                    <button class="click">Learn More</button>
+                </div>
             </div>
         </div>
+
+        <style>
+            .jumbotron {
+                background-image: url(portada.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                padding: 150px 50px;
+                object-fit: cover;
+            }
+
+            .sub {
+                display: flex;
+                gap: 5px;
+                padding-left: 130px;
+                font-size: 10px;
+            }
+            .leicalogo {
+                color: red;
+            }
+            .hyper {
+                background-color: rgb(0, 0, 0);
+                color: white;
+                border-radius: 100px;
+                font-weight: 500;
+                padding: 5px 15px;
+            }
+            .click {
+                background-color: rgb(49, 49, 49);
+                color: white;
+                border-radius: 10px;
+                font-weight: 500;
+                padding: 5px 15px;
+                display: flex;
+                flex-direction: column;
+
+                transition: background 0.3s ease-in;
+                transition: all 0.3s ease-in
+            }
+            .click:hover {
+                background-color: #616161;
+                transform: scale(1.1);
+            }
+            .subs {
+                font-weight: 500;
+                font-size: 17px;
+            }
+            .all {
+                padding-left: 150px;
+            }
+            .descrip {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        </style>
     </div>
-
-    <style>
-        .jumbotron {
-            background-image: url(portada.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            padding: 150px 50px;
-            object-fit: cover;
-        }
-
-        .sub {
-            display: flex;
-            gap: 5px;
-            padding-left: 130px;
-            font-size: 10px;
-        }
-        .leicalogo {
-            color: red;
-        }
-        .hyper {
-            background-color: rgb(0, 0, 0);
-            color: white;
-            border-radius: 100px;
-            font-weight: 500;
-            padding: 5px 15px;
-        }
-        .click {
-            background-color: rgb(49, 49, 49);
-            color: white;
-            border-radius: 10px;
-            font-weight: 500;
-            padding: 5px 15px;
-            display: flex;
-            flex-direction: column;
-        }
-        .subs {
-            font-weight: 500;
-            font-size: 17px;
-        }
-        .all {
-            padding-left: 150px;
-        }
-        .descrip{
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-    </style>
 </div>

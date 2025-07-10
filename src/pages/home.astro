@@ -13,78 +13,94 @@ import Jumbotron from "../components/Jumbotron.astro";
     <div class="headingpart">
         <h2>TVs & HA</h2>
     </div>
-    <Sections
-        title="Xiaomi TV Max 100 2025"
-        description="Ultra-large 4K display"
-        doble="Maximize your view with stunning clarity"
-        imgURL="max100.webp"
-    />
-    <Sections
-        title="Xiaomi Smart Projector L1 Pro"
-        description="Advanced fully sealed"
-        doble="optical engine design"
-        imgURL="proyector.webp"
-    />
+
+    <div class="house">
+        <Sections
+            title="Xiaomi TV Max 100 2025"
+            description="Ultra-large 4K display"
+            doble="Maximize your view with stunning clarity"
+            imgURL="max100.webp"
+        />
+        <Sections
+            title="Xiaomi Smart Projector L1 Pro"
+            description="Advanced fully sealed"
+            doble="optical engine design"
+            imgURL="proyector.webp"
+        />
+    </div>
+
     <div class="headingpart">
         <h2>Vacuum Cleaners</h2>
     </div>
-    <Sections
-        title="Xiaomi Robot Vacuum X20 Max"
-        description="All-in-one base station"
-        doble="Extendable mop arm"
-        imgURL="robot.webp"
-    />
-    <Sections
-        title="Xiaomi Trueclean 20W Wet Dry Vacuum"
-        description="Powerful cleaning and mopping to remove"
-        doble="stubborn stains"
-        imgURL="dry.webp"
-    />
-    <Sections
-        title="Xiaomi Vacuum Cleaner G20 Max"
-        description="180AW powerful suction, versatile cleaning for"
-        doble="the entire home"
-        imgURL="g20.webp"
-    />
+
+    <div class="house">
+        <div style="flex-basis: 77%">
+            <Sections
+                title="Xiaomi Robot Vacuum X20 Max"
+                description="All-in-one base station"
+                doble="Extendable mop arm"
+                imgURL="robot.webp"
+            />
+        </div>
+        <Sections
+            title="Xiaomi Trueclean 20W Wet Dry Vacuum"
+            description="Powerful cleaning and mopping to remove"
+            doble="stubborn stains"
+            imgURL="dry.webp"
+        />
+        <Sections
+            title="Xiaomi Vacuum Cleaner G20 Max"
+            description="180AW powerful suction, versatile cleaning for"
+            doble="the entire home"
+            imgURL="g20.webp"
+        />
+    </div>
+
     <div class="headingpart">
         <h2>Cooking Appliances</h2>
     </div>
+
+    <div class="house">
+        <div style="flex-basis: 77%">
         <Sections
-        title="Xiaomi Smart Cooking Robot"
-        description="3D induction heating technology"
-        doble="35 fuctions in 1 machine"
-        imgURL="smartcooking.webp"
-    />
-        <Sections
+            title="Xiaomi Smart Cooking Robot"
+            description="3D induction heating technology"
+            doble="35 fuctions in 1 machine"
+            imgURL="smartcooking.webp"
+        />
+    </div>
+    <Sections
         title="Xiaomi Dual Zone Air Fryer 10L"
         description="3.5L + 6.5L, 10L large capacity"
         doble="71%* boost in efficiency"
         imgURL="air.webp"
     />
-        <Sections
+    <Sections
         title="Xiaomi Smart Kettle 2 Pro"
         description="Precise temperature controls"
         doble="Multiple water boiling modes"
         imgURL="kettle.webp"
     />
-        <Sections
+    <Sections
         title="Xiaomi Induction Cooker Lite"
         description="2100W powe load"
         doble="9-level heat adjustment"
         imgURL="induccion.webp"
     />
-        <Sections
+    <Sections
         title="Xiaomi Multifunctional Rice Cooker 4L"
         description="860W high-powered heating"
         doble="10 fuction menus"
         imgURL="ricecooker.webp"
     />
-        <Sections
+    <div style="flex-basis: 77%">
+    <Sections
         title="Xiaomi Muntifunctional Hot Pot Cooker 6L"
         description="2000W high power"
         doble="Consisten heating when boiling"
         imgURL="hotpot.webp"
     />
+    </div>
 </Layout>
 
 <style>
@@ -99,5 +115,12 @@ import Jumbotron from "../components/Jumbotron.astro";
     }
     .color {
         color: white;
+    }
+    .house {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px;
     }
 </style>

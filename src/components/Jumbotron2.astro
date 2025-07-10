@@ -41,7 +41,7 @@ const { background } = Astro.props;
         padding-left: 150px;
         display: flex;
         flex-direction: column;
-        gap:12px
+        gap: 12px;
     }
     .division {
         display: flex;
@@ -57,5 +57,13 @@ const { background } = Astro.props;
         border-radius: 10px;
         font-weight: 500;
         padding: 5px 15px;
+        transition: background 0.3s ease-in;
+        transition: all 0.3s ease-in
+    }
+    .button:hover {
+        background-color: #616161;
+        transform:scale(1.1)
+        
+
     }
 </style>

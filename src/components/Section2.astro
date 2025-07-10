@@ -4,7 +4,7 @@ interface Props {
     description: string;
     imgURL: string;
 }
-const { title, description, imgURL, } = Astro.props;
+const { title, description, imgURL } = Astro.props;
 ---
 
 <div class="all">
@@ -16,7 +16,7 @@ const { title, description, imgURL, } = Astro.props;
         <button class="button">Learn More</button>
     </div>
     <div>
-        <img src={imgURL} alt="" class="img"/>
+        <img src={imgURL} alt="" class="img" />
     </div>
 </div>
 
@@ -25,17 +25,21 @@ const { title, description, imgURL, } = Astro.props;
         width: 100%;
         height: 300px;
         object-fit: cover;
+        transition: all 0.3s ease-in;
     }
     .all {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap:40px;
+        gap: 40px;
         padding: 50px;
         text-align: center;
         flex-basis: 500px;
         background-color: #fff;
-
+       
+    }
+    .img:hover {
+        transform: scale(1.1);
     }
     .looks {
         display: flex;
@@ -52,10 +56,9 @@ const { title, description, imgURL, } = Astro.props;
         font-weight: 700;
         padding: 8px 20px;
         color: white;
-
         transition: background 0.3s ease-in;
     }
-    .button:hover {
-        background-color: rgb(97, 97, 97);
+    .button:hover{
+        background-color: #616161;
     }
 </style>
