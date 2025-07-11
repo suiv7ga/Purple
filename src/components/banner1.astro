@@ -9,7 +9,7 @@ const { title, sub, tag, imgURL } = Astro.props;
 ---
 
 <div class="inicio">
-    <div>
+    <div class="enter">
         <img src={imgURL} alt={title} class="img" />
     </div>
     <div class="looks">
@@ -20,11 +20,15 @@ const { title, sub, tag, imgURL } = Astro.props;
 </div>
 
 <style>
+    .enter{
+        overflow: hidden;
+        border-radius: 10px;
+
+    }
     .img {
         width: 100%;
         height: 250px;
         object-fit: cover;
-        border-radius: 10px;
 
         transition: all 0.3s ease-in;
     }

@@ -8,7 +8,9 @@ const { imgURL, title, description } = Astro.props;
 ---
 
 <div class="inicio">
+    <div class="enter">
     <img src={imgURL} alt={title} class="img" />
+    </div>
     <div class="little">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -19,6 +21,9 @@ const { imgURL, title, description } = Astro.props;
 </div>
 
 <style>
+    .enter{
+        overflow: hidden;
+    }
     .button {
         background-color: rgb(49, 49, 49);
         border-radius: 10px;
