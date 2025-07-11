@@ -6,20 +6,29 @@ const { background } = Astro.props;
 ---
 
 <div class="background15ultra">
-    <div class="background">
-        <img src={background} alt="" />
-    </div>
-    <slot />
-    <div class="division">
-        <h1></h1>
-        <p class="subs"></p>
-    </div>
-    <div>
-        <button class="button">Learn More</button>
+    <div class="title">
+        <div class="background">
+            <img src={background} alt="" />
+        </div>
+        <slot />
+        <div class="division">
+            <h1></h1>
+            <p class="subs"></p>
+        </div>
+        <div>
+            <button class="button">Learn More</button>
+        </div>
     </div>
 </div>
 
 <style>
+    .title {
+        display: flex;
+        flex-direction: column;
+        padding-top: 190px;
+        padding-left: 150px;
+
+    }
     .background {
         position: absolute;
         width: 100%;
@@ -36,14 +45,13 @@ const { background } = Astro.props;
 
     .background15ultra {
         position: relative;
-        padding: 150px 50px;
+        height: 500px;
         object-fit: cover;
-        padding-left: 150px;
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
-  
+
     .division {
         display: flex;
         flex-direction: column;
@@ -59,12 +67,10 @@ const { background } = Astro.props;
         font-weight: 500;
         padding: 5px 15px;
         transition: background 0.3s ease-in;
-        transition: all 0.3s ease-in
+        transition: all 0.3s ease-in;
     }
     .background15ultra:hover button {
         background-color: #616161;
-        transform:scale(1.1)
-        
-
+        transform: scale(1.1);
     }
 </style>
