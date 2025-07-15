@@ -83,22 +83,30 @@ import Jumbotron from "../components/Jumbotron.astro";
 
 	<h2 class="sections">Explore Xiaomi</h2>
 	<div class="final">
-	<Banner3
+
+
+	  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">	<Banner3
 		title="Xiaomi 212W HyperCharge Power Bank 25000"
 		description="An ideal travel partner for fast, safe and reliable charging."
 		imgURL="POWER.webp"
-	/>
-	<Banner3
+	/> </div>
+      <div class="swiper-slide">	<Banner3
 		title="Redmi Note 14 Series shines in Sand Gold"
 		description="Curved lines and golden hues blend elegance and strenght in every detail."
 		imgURL="14.webp"
-	/>
-	<Banner3
+	/></div>
+      <div class="swiper-slide">	<Banner3
 		title="Xiaomi HyperOS 2"
 		description="Enhanced user experience and seamless smart connectivity demonstrate the upgrades."
 		imgURL="hyperos.webp"
-	/>
-	</div>
+	/></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
 </Layout>
 
 <style>
@@ -164,7 +172,26 @@ import Jumbotron from "../components/Jumbotron.astro";
 			el: ".swiper-scrollbar",
 		},
 		autoplay: {
-			delay: 100,
+			delay: 2500,
+			disableOnInteraction: false,
+
 		},
 	});
 </script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+	import Swiper from "swiper";
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
