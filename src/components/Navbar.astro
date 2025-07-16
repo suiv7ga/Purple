@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon/components';
 ---
 
-<header>
+<header class="move">
     <nav class="barra">
         
         <div class="separadores">
@@ -17,7 +17,7 @@ import { Icon } from 'astro-icon/components';
         </div>
         <div class="separadores">
             <ul class="enlaces">
-                <li><a href="https://c.mi.com/global/">Comunnity</a></li>
+                <li><a href="https://c.mi.com/global/">Community</a></li>
                 <li><a href="/discover">Discover</a></li>
                 <li><a href="/support">Support</a></li>
             </ul>
@@ -52,5 +52,14 @@ import { Icon } from 'astro-icon/components';
     }
     .icono {
         color: #ff6900;
+    }
+    .move{
+        position: sticky;
+        top:0;
+        left:0;
+        width:100%;
+        z-index: 1000;
+        background-color: white;
+
     }
 </style>

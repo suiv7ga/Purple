@@ -1,8 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
-import '../styles/globlal.css'
-
+import "../styles/globlal.css";
 ---
 
 <!doctype html>
@@ -15,8 +14,8 @@ import '../styles/globlal.css'
 		<title>Purple</title>
 	</head>
 	<body class="back">
-		<Navbar />
-
+			<Navbar />
+		
 		<slot />
 
 		<Footer />
@@ -24,20 +23,22 @@ import '../styles/globlal.css'
 </html>
 
 <style>
-	.back{
+	.back {
 		background-color: #f7f7f7;
 	}
 </style>
 
 <script>
-	import Lenis from 'lenis'
-// Initialize Lenis
-const lenis = new Lenis({
-  autoRaf: true,
-});
+	import Lenis from "lenis";
+	// Initialize Lenis
+	const lenis = new Lenis({
+		autoRaf: true,
+	});
 
-// Listen for the scroll event and log the event data
-lenis.on('scroll', (e) => {
-  console.log(e);
-});
+	// Listen for the scroll event and log the event data
+	lenis.on("scroll", (e) => {
+		console.log(e);
+	});
 </script>
+
+
