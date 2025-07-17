@@ -1,13 +1,18 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
 ---
 
 <header class="move">
     <nav class="barra">
-        
         <div class="separadores">
             <a href="/" class="enlaces">
-                <Icon name="simple-icons:xiaomi" width="36" height="36" class="logo-mobile" class="icono"/>
+                <Icon
+                    name="simple-icons:xiaomi"
+                    width="36"
+                    height="36"
+                    class="logo-mobile"
+                    class="icono"
+                />
             </a>
             <ul class="enlaces">
                 <li><a href="/mobile">Mobile</a></li>
@@ -18,48 +23,55 @@ import { Icon } from 'astro-icon/components';
         <div class="separadores">
             <ul class="enlaces">
                 <li><a href="https://c.mi.com/global/">Community</a></li>
-                <li><a href="/discover">Discover</a></li>
-                <li><a href="/support">Support</a></li>
             </ul>
             <div class="enlaces">
-                <Icon name="ant-design:search-outlined" width="32" height="32" class="search-icon" />
-                <Icon name="ant-design:user-outlined" width="32" height="32" class="contat-icon" />
+                <Icon
+                    name="ant-design:search-outlined"
+                    width="32"
+                    height="32"
+                    class="search-icon"
+                />
+                <a href="https://account.xiaomi.com/fe/service/login/password">
+                    <Icon
+                        name="ant-design:user-outlined"
+                        width="32"
+                        height="32"
+                        class="contat-icon"
+                    />
+                </a>
             </div>
         </div>
-
-        
     </nav>
+
+    <style>
+        .separadores {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .barra {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+        }
+        .enlaces {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .icono {
+            color: #ff6900;
+        }
+        .move {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: white;
+            justify-content: space-between;
+        }
+    </style>
 </header>
-
-<style>
-    .separadores {
-        display: flex;
-        gap: 30px;
-        align-items: center;
-
-    }
-    .barra {
-        display: flex;
-        gap: 30px;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 30px;
-    }
-    .enlaces {
-        display: flex;
-        gap: 30px;
-        align-items: center;
-    }
-    .icono {
-        color: #ff6900;
-    }
-    .move{
-        position: sticky;
-        top:0;
-        left:0;
-        width:100%;
-        z-index: 1000;
-        background-color: white;
-
-    }
-</style>

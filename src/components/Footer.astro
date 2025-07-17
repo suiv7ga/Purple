@@ -4,11 +4,11 @@ import { Icon } from "astro-icon/components";
 
 <footer>
     <div class="footer">
-        <div>
+        <div class="tittle">
             <p>Follow Xiaomi</p>
             <div>
             <ul>
-                <li>
+                <li class="icons">
                     <a href="https://www.facebook.com/XiaomiGlobal/"
                         ><Icon
                             name="simple-icons:facebook"
@@ -46,7 +46,7 @@ import { Icon } from "astro-icon/components";
             </div>
         </div>
 
-        <div>
+        <div class="tittle">
             <p>Enter your email address to subscribe to our newsletters</p>
             <form action="">
                 <label for="email">
@@ -79,5 +79,12 @@ import { Icon } from "astro-icon/components";
     color:white
 
 }
-
+.tittle{
+    text-align: center;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+}
 </style>
