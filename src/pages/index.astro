@@ -10,7 +10,8 @@ import Jumbotron from "../components/Jumbotron.astro";
 ---
 
 <Layout>
-	<!-- Slider main container -->
+
+	<div class="container">
 	<div class="swiper">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
@@ -85,7 +86,7 @@ import Jumbotron from "../components/Jumbotron.astro";
 	<div class="final">
 
 
-	  <!-- Swiper -->
+	 
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">	<Banner3
@@ -106,8 +107,11 @@ import Jumbotron from "../components/Jumbotron.astro";
     </div>
     <div class="swiper-pagination"></div>
   </div>
+  </div>
 
 </Layout>
+
+
 
 <style>
 	.sections {
@@ -138,10 +142,13 @@ import Jumbotron from "../components/Jumbotron.astro";
 		padding: 15px;
 		text-align: center;
 	}
+	@media (max-width:670px){
+		div.container{
+			max-width: none;
+		}
+
+	}
 	
-
-
-
 </style>
 
 <script>
