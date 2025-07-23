@@ -12,10 +12,20 @@ import "../styles/globlal.css";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Purple</title>
+		<meta property="og:title" content="Purple" />
+		<meta property="og:type" content="image" />
+		<meta
+			property="og:url"
+			content="https://www.imdb.com/title/tt0117500/"
+		/>
+		<meta
+			property="og:image"
+			content="https://ia.media-imdb.com/musu.png"
+		/>
 	</head>
 	<body class="back">
-			<Navbar />
-		
+		<Navbar />
+
 		<slot />
 
 		<Footer />
@@ -40,5 +50,3 @@ import "../styles/globlal.css";
 		console.log(e);
 	});
 </script>
-
-

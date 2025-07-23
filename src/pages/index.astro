@@ -10,199 +10,204 @@ import Jumbotron from "../components/Jumbotron.astro";
 ---
 
 <Layout>
-
 	<div class="container">
-	<div class="swiper">
-		<!-- Additional required wrapper -->
-		<div class="swiper-wrapper">
-			<!-- Slides -->
-			<div class="swiper-slide">
-				<Jumbotron />
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<Jumbotron />
+				</div>
+				<div class="swiper-slide">
+					<Jumbotron2 background="poco.jpg">
+						<h1 class="headingpoco">POCO 7</h1>
+						<p class="letters">Super speed unleashed</p>
+						<p class="letters">
+							Flagship Snapdragon 8s Gen 4 Massive
+						</p>
+						<p class="letters">6500mhAh (typ) battery</p>
+					</Jumbotron2>
+				</div>
+				<div class="swiper-slide">
+					<Jumbotron2 background="xiaomismart.jpg">
+						<h1>Xiaomi Smart Band 10</h1>
+						<p>
+							1.72" AMOLED display with symmetricla ultra-thin
+							bezels
+						</p>
+					</Jumbotron2>
+				</div>
+				...
 			</div>
-			<div class="swiper-slide">
-				<Jumbotron2 background="poco.jpg">
-					<h1 class="headingpoco">POCO 7</h1>
-					<p class="letters">Super speed unleashed</p>
-					<p class="letters">Flagship Snapdragon 8s Gen 4 Massive</p>
-					<p class="letters">6500mhAh (typ) battery</p>
-				</Jumbotron2>
-			</div>
-			<div class="swiper-slide">
-				<Jumbotron2 background="xiaomismart.jpg">
-					<h1>Xiaomi Smart Band 10</h1>
-					<p>
-						1.72" AMOLED display with symmetricla ultra-thin bezels
-					</p>
-				</Jumbotron2>
-			</div>
-			...
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
 		</div>
-		<!-- If we need pagination -->
-		<div class="swiper-pagination"></div>
 
-		<!-- If we need navigation buttons -->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
+		<h2 class="sections">Featured Products</h2>
 
-		<!-- If we need scrollbar -->
-		<div class="swiper-scrollbar"></div>
-	</div>
+		<div class="inicio">
+			<div style="flex-basis: 82.5%">
+				<Banner1
+					title="Xioami Pad 7 Pro"
+					sub="Xiaomi HyperAI"
+					tag="Focus your flow"
+					imgURL="tablet.webp"
+				/>
+			</div>
 
-	<h2 class="sections">Featured Products</h2>
-
-	<div class="inicio">
-		<div style="flex-basis: 82.5%">
-			<Banner1
-				title="Xioami Pad 7 Pro"
-				sub="Xiaomi HyperAI"
-				tag="Focus your flow"
-				imgURL="tablet.webp"
+			<Banner2
+				title="Xiaomi Focus Pen"
+				description="Easy to write and has an added spotlight button"
+				imgURL="pencill.webp"
+			/>
+			<Banner2
+				title="Xiaomi Pad 7/ 7 Pro Focus Keyboard"
+				description="A comprehensive tablet assistant"
+				imgURL="tabletkeyboard.webp"
+			/>
+			<Banner2
+				title="Xiaomi 2K Monitor A27Qi"
+				description="Slim and simple for effortless work"
+				imgURL="monitor 2k.webp"
+			/>
+			<Banner2
+				title="Xioami Router"
+				description="Full-speed, full-home Wi-Fi 6 coverage"
+				imgURL="routerrr.webp"
 			/>
 		</div>
 
-		<Banner2
-			title="Xiaomi Focus Pen"
-			description="Easy to write and has an added spotlight button"
-			imgURL="pencill.webp"
-		/>
-		<Banner2
-			title="Xiaomi Pad 7/ 7 Pro Focus Keyboard"
-			description="A comprehensive tablet assistant"
-			imgURL="tabletkeyboard.webp"
-		/>
-		<Banner2
-			title="Xiaomi 2K Monitor A27Qi"
-			description="Slim and simple for effortless work"
-			imgURL="monitor 2k.webp"
-		/>
-		<Banner2
-			title="Xioami Router"
-			description="Full-speed, full-home Wi-Fi 6 coverage"
-			imgURL="routerrr.webp"
-		/>
+		<h2 class="sections">Explore Xiaomi</h2>
+		<div class="final">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<Banner3
+							title="Xiaomi 212W HyperCharge Power Bank 25000"
+							description="An ideal travel partner for fast, safe and reliable charging."
+							imgURL="POWER.webp"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<Banner3
+							title="Redmi Note 14 Series shines in Sand Gold"
+							description="Curved lines and golden hues blend elegance and strenght in every detail."
+							imgURL="14.webp"
+						/>
+					</div>
+					<div class="swiper-slide">
+						<Banner3
+							title="Xiaomi HyperOS 2"
+							description="Enhanced user experience and seamless smart connectivity demonstrate the upgrades."
+							imgURL="hyperos.webp"
+						/>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
 	</div>
 
-	<h2 class="sections">Explore Xiaomi</h2>
-	<div class="final">
-
-
-	 
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">	<Banner3
-		title="Xiaomi 212W HyperCharge Power Bank 25000"
-		description="An ideal travel partner for fast, safe and reliable charging."
-		imgURL="POWER.webp"
-	/> </div>
-      <div class="swiper-slide">	<Banner3
-		title="Redmi Note 14 Series shines in Sand Gold"
-		description="Curved lines and golden hues blend elegance and strenght in every detail."
-		imgURL="14.webp"
-	/></div>
-      <div class="swiper-slide">	<Banner3
-		title="Xiaomi HyperOS 2"
-		description="Enhanced user experience and seamless smart connectivity demonstrate the upgrades."
-		imgURL="hyperos.webp"
-	/></div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-  </div>
-
-</Layout>
-
-
-
-<style>
-	.sections {
-		display: flex;
-		justify-content: center;
-		padding: 50px 3% 25px;
-		font-size: 26px;
-		width: 700;
-	}
-	.headingpoco {
-		color: rgb(247, 210, 0);
-	}
-	.letters {
-		color: white;
-	}
-	.inicio {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 15px;
-		padding: 15px;
-	}
-	.final {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 15px;
-		padding: 15px;
-		text-align: center;
-	}
-	@media (max-width:670px){
-		div.container{
-			max-width: none;
+	<style>
+		.sections {
+			display: flex;
+			justify-content: center;
+			padding: 50px 3% 25px;
+			font-size: 26px;
+			width: 700;
 		}
+		.headingpoco {
+			color: rgb(247, 210, 0);
+		}
+		.letters {
+			color: white;
+		}
+		.inicio {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 15px;
+			padding: 15px;
+		}
+		.final {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 15px;
+			padding: 15px;
+			text-align: center;
+			padding: 0 60px;
 
-	}
-	
-</style>
+			max-width: 720px;
+			margin:0 auto;
+		}
+		@media (max-width: 670px) {
+			div.container {
+				max-width: none;
+			}
+		}
+	</style>
 
-<script>
-	// core version + navigation, pagination modules:
-	import Swiper from "swiper";
-	import { Navigation, Pagination } from "swiper/modules";
-	// import Swiper and modules styles
-	import "swiper/css";
-	import "swiper/css/navigation";
-	import "swiper/css/pagination";
+	<script>
+		// core version + navigation, pagination modules:
+		import Swiper from "swiper";
+		import { Navigation, Pagination } from "swiper/modules";
+		// import Swiper and modules styles
+		import "swiper/css";
+		import "swiper/css/navigation";
+		import "swiper/css/pagination";
 
-	// init Swiper:
-	const swiper = new Swiper(".swiper", {
-		// configure Swiper to use modules
-		modules: [Navigation, Pagination],
-		// Optional parameters
-		direction: "horizontal",
-		loop: true,
-		// If we need pagination
-		pagination: {
-			el: ".swiper-pagination",
-		},
+		// init Swiper:
+		const swiper = new Swiper(".swiper", {
+			// configure Swiper to use modules
+			modules: [Navigation, Pagination],
+			// Optional parameters
+			direction: "horizontal",
+			loop: true,
+			// If we need pagination
+			pagination: {
+				el: ".swiper-pagination",
+			},
 
-		// Navigation arrows
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
+			// Navigation arrows
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
 
-		// And if we need scrollbar
-		scrollbar: {
-			el: ".swiper-scrollbar",
-		},
-		autoplay: {
-			delay: 2500,
-			disableOnInteraction: false,
+			// And if we need scrollbar
+			scrollbar: {
+				el: ".swiper-scrollbar",
+			},
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+		});
+	</script>
 
-		},
-	});
-</script>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+	></script>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-	import Swiper from "swiper";
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+	<!-- Initialize Swiper -->
+	<script>
+		import Swiper from "swiper";
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script></Layout
+>
